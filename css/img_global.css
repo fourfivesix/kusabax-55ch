@@ -158,3 +158,55 @@ form .trap {
 	background-color: #F0E0D6;
 	border: 1px dotted #000000;
 }
+
+p.contador {
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+
+div.formulario {
+    display:none;
+    font-family:Arial, Helvetica, sans-serif;
+    background: url('images/bg-formulario.jpg') no-repeat top right #e7f5ff;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 10;
+    width: 86%;
+    left: 5%;
+    padding: 2%;
+    margin-top: 30px;
+}
+
+div.formulario img.integral {
+  margin-top:30px;
+  padding:5px;
+  background:white;
+  border:1px solid gray;
+}
+
+div.formulario p.compreendo {
+  width:600px;
+}
+div.formulario input.submit {
+  margin-top:20px;
+}
+
+div.formulario p.frase {
+  margin-bottom:0;
+}
+
+div.formulario input#escrever {
+  width:600px;
+}
+
+div.fade {
+    display:none;
+    background: url('images/bg-fade.png');
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}

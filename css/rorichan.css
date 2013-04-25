@@ -1,0 +1,199 @@
+html, body {
+	background:#D7E2FF;
+	color:#333333;
+}
+a {
+	color:#333333;
+}
+a:hover {
+	color:#DD0000;
+}
+.reflink a:hover{
+	font-weight: bold;
+}
+.adminbar {
+	text-align:right;
+	clear:both;
+	float:right;
+}
+.logo {
+	clear:both;
+	text-align:center;
+	font-size:2em;
+	color:#333333;
+	width:100%;
+}
+.replymode {
+	background:#F0F4FF;
+	text-align:center;
+	border: 1px dashed #000000;
+	padding:2px;
+	color:#333333;
+	width:100%;
+}
+.catalogmode {
+	background:#0040E0;
+	text-align:center;
+	padding:2px;
+	color:#333333;
+	width:100%;
+}
+.postarea {
+}
+.rules {
+	/*font-size:0.7em;*/
+	width: 468px;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+.rules li {
+	margin-left: 1em;
+	/*text-indent: 0em;*/
+}
+.postblock {
+	background:#FFFFFF;
+	color:#117787;
+	font-weight:800;
+	border: 1px solid #000000;
+}
+.footer {
+	text-align:center;
+	font-size:12px;
+	font-family:serif;
+}
+.passvalid {
+	background:#FFFFFF;
+	text-align:center;
+	width:100%;
+	color:#333333;
+}
+.dellist {
+	font-weight: bold;
+	text-align:center;
+}
+.delbuttons {
+	text-align:center;
+	padding-bottom:4px;
+
+}
+.managehead {
+	background:#AAAA66;
+	color:#400000;
+	padding:0px;
+}
+.postlists {
+	background:#333333;
+	width:100%;
+	padding:0px;
+	color:#333333;
+}
+.row1 {
+	background:#EEEECC;
+	color:#333333;
+}
+.row2 {
+	background:#DDDDAA;
+	color:#333333;
+}
+.unkfunc {
+	background:inherit;
+	color:#789922;
+}
+.filesize {
+	text-decoration:none;
+}
+.filetitle {
+	background:inherit;
+	font-size:1.2em;
+	color:#CC1105;
+	font-weight:800;
+}
+.postername {
+	color:#117743;
+	font-weight:bold;
+}
+.postertrip {
+	color:#228854;
+}
+.oldpost {
+	color:#CC1105;
+	font-weight:800;
+}
+.omittedposts {
+	color:#707070;
+}
+.reply {
+	background: #F0F4FF;
+	color: #333333;
+}
+.replyhl {
+	background: #F0F4FF;
+	color: #333333;
+}
+.doubledash {
+	vertical-align:top;
+	clear:both;
+	float:left;
+}
+.replytitle {
+	font-size: 1.2em;
+	color:#FFFFFF;
+	font-weight:800;
+}
+.commentpostername {
+	color:#117743;
+	font-weight:800;
+}
+.thumbnailmsg {
+	font-size: small;
+	color:#333333;
+}
+
+.abbrev {
+	color:#707070;
+}
+.highlight {
+	background:#F0F4FF;
+	color:#333333;
+	border: 2px dashed #FF3333;
+}
+
+#watchedthreads {
+	background-color: #FFFFFF !important;
+}
+
+.hidethread {
+	background: transparent url('./icons/white/icons.gif') -32px -16px no-repeat;
+}
+
+.unhidethread {
+	background: transparent url('./icons/white/icons.gif') -48px 0px no-repeat;
+}
+
+.watchthread {
+	background: transparent url('./icons/white/icons.gif') -32px 0px no-repeat;
+}
+
+.expandthread {
+	background: transparent url('./icons/white/icons.gif') 0px -16px no-repeat;
+}
+
+.quickreply {
+	background: transparent url('./icons/white/icons.gif') 0px 0px no-repeat;
+}
+
+.hidewatchedthreads {
+	background: transparent url('./icons/white/icons.gif') -48px -16px no-repeat;
+}
+
+.refreshwatchedthreads {
+	background: transparent url('./icons/white/icons.gif') -16px -16px no-repeat;
+}
+
+.restorewatchedthreads {
+	background: transparent url('./icons/white/icons.gif') -16px 0px no-repeat;
+}
+
+.reflinkpreview {
+	background-color: #F0F4FF !important;
+}

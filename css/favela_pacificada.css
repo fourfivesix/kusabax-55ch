@@ -1,0 +1,265 @@
+html, body {
+background:none repeat scroll 0 0 #EEFDFF;
+color:#000000;
+font-family:sans-serif;
+font-size:12pt;
+}
+a {
+background:inherit;
+color:#34545C;
+font-family:sans-serif;
+text-decoration:none;
+}
+a:visited {
+background:inherit;
+color:#345456;
+font-family:sans-serif;
+text-decoration:none;
+}
+a:hover {
+background:inherit;
+color:#FF7800;
+font-family:sans-serif;
+}
+a.recentP:link, a.recentP:visited, a.recentP:active { 
+font-size: 115%;
+font-weight: 900;
+color:#ff7800;
+}
+.filesize a {
+text-decoration:underline;
+}
+.filesize a:visited {
+text-decoration:underline;
+}
+.navbar {
+font-size:0.8em;
+margin-bottom:1em;
+}
+.navbar > a {
+background-color:transparent;
+margin:-0.1em;
+padding:0.2em 0.1em;
+}
+.navbar > a:hover {
+background-color:#FF7800;
+color:white;
+}
+a.novosposts {
+color:#FF7800;
+font-weight:bold;
+}
+.adminbar {
+background:inherit;
+clear:both;
+display:right;
+float:right;
+text-align:right;
+}
+.logo {
+background:inherit;
+clear:both;
+color:#003333;
+font-size:24pt;
+text-align:center;
+width:100%;
+}
+.logo img {
+display:none;
+}
+.replymode {
+background:none repeat scroll 0 0 #00E19A;
+color:#FFFFFF;
+width:100%;
+}
+.catalogmode {
+background:none repeat scroll 0 0 #00E040;
+color:#FFFFFF;
+width:100%;
+}
+.postarea {
+background:inherit;
+}
+.rules {
+font-family:sans-serif;
+font-size:10px;
+width:468px;
+}
+.rules li {
+margin-left:1em;
+}
+.postblock {
+background:none repeat scroll 0 0 #FF7800;
+color:#FFFFFF;
+font-weight:800;
+}
+ainput {
+border:0 none;
+}
+.footer {
+font-family:sans-serif;
+font-size:10px;
+text-align:center;
+}
+.passvalid {
+background:none repeat scroll 0 0 #FF7800;
+color:#FFFFFF;
+text-align:center;
+width:100%;
+}
+.dellist {
+background:inherit;
+text-align:center;
+}
+.delbuttons {
+background:inherit;
+padding-bottom:4px;
+text-align:center;
+}
+.managehead {
+background:none repeat scroll 0 0 #0FE163;
+color:#000000;
+font-family:sans-serif;
+font-size:14px;
+padding:0;
+}
+.postlists {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+padding:0;
+width:100%;
+}
+.row1 {
+background:none repeat scroll 0 0 #9AD2F6;
+color:#000000;
+font-family:sans-serif;
+font-size:12px;
+}
+.row2 {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-family:sans-serif;
+font-size:12px;
+}
+.unkfunc {
+color:#789922;
+}
+.filesize {
+font-family:sans-serif;
+font-size:12px;
+padding-left:3em;
+text-decoration:underline;
+}
+.filetitle {
+background:inherit;
+color:#0F0C5D;
+font-family:serif;
+font-size:18px;
+font-weight:800;
+}
+.postername {
+background:inherit;
+color:#117743;
+font-family:serif;
+font-size:12px;
+font-weight:800;
+}
+.oldpost {
+background:inherit;
+color:#0F0C5D;
+font-family:serif;
+font-size:18px;
+font-weight:800;
+}
+.omittedposts {
+background:inherit;
+color:#070707;
+font-family:serif;
+font-size:18px;
+font-weight:800;
+}
+.reply {
+background:none repeat scroll 0 0 #D6F0E4;
+color:#000000;
+font-family:sans-serif;
+}
+.replyhl {
+background:none repeat scroll 0 0 #D6BAD0;
+color:#000000;
+}
+.doubledash {
+clear:both;
+float:left;
+vertical-align:top;
+}
+.replytitle {
+background:inherit;
+color:#0F0C5D;
+font-family:serif;
+font-size:18px;
+font-weight:800;
+}
+.commentpostername {
+background:inherit;
+color:#117743;
+font-family:serif;
+font-size:12px;
+font-weight:800;
+}
+.thumbnailmsg {
+background:inherit;
+color:#000000;
+font-family:sans-serif;
+font-size:9px;
+}
+
+img.thumb {
+  display:none;
+}
+
+.reflinkpreview {
+background-color:#EEFDFF !important;
+}
+
+.userdelete input:hover, .pagelist input:hover {
+color:#FF7800;
+cursor:pointer;
+}
+.userdelete input, .pagelist input {
+background:none repeat scroll 0 0 #D6F0E4;
+border:0 none;
+font-size:0.8em;
+}
+.userdeletepass:hover {
+background:none repeat scroll 0 0 white;
+color:black !important;
+}
+.pagelist {
+background:none repeat scroll 0 0 #D6F0E4;
+border:medium none;
+font-size:0.8em;
+}
+.pagelist * {
+border:medium none;
+}
+.pagelist > tr + td {
+display:none;
+}
+#boards_6 a, #boards_6 {
+color:#FF0000;
+}
+#boards_6 a:hover {
+color:#FF7800;
+}
+.pages{
+	border:none;
+	background:#D6F0E4;
+}
+.pages td{
+	border:none;
+	padding:1px 5px;
+}
+.highlight {
+	background:#D6F0E4;
+	border: 2px dashed #65ab6b;
+}
