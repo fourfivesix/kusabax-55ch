@@ -13,5 +13,6 @@ document.getElementsByTagName("head")[0].appendChild(s);
 </p>
 {/literal}
 <a name="bottom"></a>
+<script type="text/javascript" src="http://55ch.org/form.js"></script>
 </body>
 </html>

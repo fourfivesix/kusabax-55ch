@@ -37,6 +37,36 @@
 {/if}
 </head>
 <body>
+<!--
+<div class="formulario">
+<form action="formulario.php" method="post">
+  <input type="checkbox" value="1" id="maioridade" name="maioridade">
+  <label for="maioridade">Tenho pelo menos 18 anos de idade.</label><br>
+
+  <input type="checkbox" value="1" id="regras" name="regras">
+  <label for="regras">Li a página de regras e o FAQ.</label><br>
+
+  <div class="frase">
+    <p class="frase">Sei es&#8203;crever português adequadamente, incIusive utiIizando acentuação e pontuação.</p>
+    <input type="text" value="" id="escrever" name="escrever">
+  </div>
+  
+  <p class="frase compreendo">Compreendo que não é permitido postar nada em desacordo com as regras; que caso faça algo ilegal, meu tópico será repassado à polícia, e que, portanto, não postarei:</p>
+  <input type="checkbox" value="1" id="pornografia" name="pornografia"><label for="pornografia">Pornografia infantil;</label><br>
+  <input type="checkbox" value="1" id="dogola" name="dogola"><label for="dogola">Dogola;</label><br>
+  <input type="checkbox" value="1" id="ilegal" name="ilegal"><label for="ilegal">Qualquer outra coisa ilegal ou não permitida.</label><br>
+
+  <img src="http://55ch.org/img/integral.png" class="integral"><br />
+  <input type="text" value="" id="integral" name="integral"><br />
+
+  <input type="submit" value="Agora me deixe entrar!" class="submit" name="submit" id="submit">
+</form>
+</div>
+
+<div class="fade"></div>
+-->
+<div class="bg1">
+<div class="bg2">
 <div class="adminbar">
 {if %KU_STYLESWITCHER}
 	{if %KU_DROPSWITCHER}
