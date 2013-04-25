@@ -10,4 +10,6 @@
 <meta http-equiv="cache-control" content="no-cache" />
 <meta http-equiv="expires" content="Sat, 17 Mar 1990 00:00:01 GMT" />
 <meta http-equiv="Content-Type" content="text/html;charset={%KU_CHARSET}" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://js.anonym.to/anonym/anonymize.js" type="text/javascript"></script>
 <script type="text/javascript" src="{$cwebpath}/lib/javascript/gettext.js"></script>
