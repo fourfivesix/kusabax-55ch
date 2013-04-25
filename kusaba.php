@@ -12,8 +12,9 @@ $mainsize = 100-$menusize . '%';
 header("Expires: Mon, 1 Jan 2030 05:00:00 GMT");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <meta charset="ISO-8859-1">
 	<title><?php echo KU_NAME; ?></title>
 	<link rel="shortcut icon" href="<?php echo KU_WEBPATH; ?>/favicon.ico" />
 	<style type="text/css">

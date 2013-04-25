@@ -37,6 +37,10 @@ class Posting {
 
 	function CheckReplyTime() {
 		global $tc_db, $board_class;
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		/* Get the timestamp of the last time a reply was made by this IP address */
 		$results = $tc_db->GetAll("SELECT MAX(timestamp) FROM `" . KU_DBPREFIX . "posts` WHERE `boardid` = " . $board_class->board['id'] . " AND `parentid` != 0 AND `ipmd5` = '" . md5($_SERVER['REMOTE_ADDR']) . "' AND `timestamp` > " . (time() - KU_REPLYDELAY));
@@ -51,6 +55,10 @@ class Posting {
 
 	function CheckNewThreadTime() {
 		global $tc_db, $board_class;
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		/* Get the timestamp of the last time a new thread was made by this IP address */
 		$result = $tc_db->GetOne("SELECT MAX(timestamp) FROM `" . KU_DBPREFIX . "posts` WHERE `boardid` = " . $board_class->board['id'] . " AND `parentid` = 0 AND `ipmd5` = '" . md5($_SERVER['REMOTE_ADDR']) . "' AND `timestamp` > " . (time() - KU_NEWTHREADDELAY));
@@ -125,6 +133,10 @@ class Posting {
 
 	function CheckCaptcha() {
 		global $board_class;
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		/* If the board has captcha's enabled... */
 		if ($board_class->board['enablecaptcha'] == 1) {
@@ -155,6 +167,10 @@ class Posting {
 
 	function CheckBannedHash() {
 		global $tc_db, $board_class, $bans_class;
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		/* Banned file hash check */
 		if (isset($_FILES['imagefile'])) {
@@ -329,6 +345,10 @@ class Posting {
 	function CheckBlacklistedText() {
 		global $bans_class, $tc_db;
 		$badlinks = array_map('rtrim', file(KU_ROOTDIR . 'spam.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		foreach ($badlinks as $badlink) {
 			if (stripos($_POST['message'], $badlink) !== false) {

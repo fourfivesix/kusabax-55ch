@@ -93,6 +93,10 @@ class Manage {
 	/* Check login names and create session if user/pass is correct */
 	function CheckLogin() {
 		global $tc_db, $action;
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 		$tc_db->Execute("DELETE FROM `" . KU_DBPREFIX . "loginattempts` WHERE `timestamp` < '" . (time() - 1200) . "'");
 		$results = $tc_db->GetAll("SELECT HIGH_PRIORITY `ip` FROM `" . KU_DBPREFIX . "loginattempts` WHERE `ip` = '" . $_SERVER['REMOTE_ADDR'] . "' LIMIT 6");

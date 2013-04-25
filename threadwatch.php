@@ -33,6 +33,11 @@ if (!KU_WATCHTHREADS) die();
 require KU_ROOTDIR . 'inc/functions.php';
 require KU_ROOTDIR . 'inc/classes/board-post.class.php';
 
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
+
 $output = '';
 if ($_GET['board']) {
 	$results = $tc_db->GetAll("SELECT HIGH_PRIORITY `id`, `name` FROM `" . KU_DBPREFIX . "boards` WHERE `name` = " . $tc_db->qstr($_GET['board']) . "");

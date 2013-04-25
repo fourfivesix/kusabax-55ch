@@ -101,6 +101,11 @@ class Bans {
 
 	/* Return the page which will inform the user a quite unfortunate message */
 	function DisplayBannedMessage($bans, $board='') {
+    // Cloudflare support
+    if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+      $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+    }
+    
 		/* Set a cookie with the users current IP address in case they use a proxy to attempt to make another post */
 		setcookie('tc_previousip', $_SERVER['REMOTE_ADDR'], (time() + 604800), KU_BOARDSFOLDER);
 
@@ -113,6 +118,11 @@ class Bans {
 
 	function UpdateHtaccess() {
 		global $tc_db;
+
+    // Cloudflare support
+    if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+      $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+    }
 
 		$htaccess_contents = file_get_contents(KU_BOARDSDIR.'.htaccess');
 		$htaccess_contents_preserve = substr($htaccess_contents, 0, strpos($htaccess_contents, '## !KU_BANS:')+12)."\n";

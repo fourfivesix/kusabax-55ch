@@ -56,6 +56,10 @@ $posting_class = new Posting();
 
 modules_load_all();
 
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
 
 // }}}
 // {{{ GET/POST board send check

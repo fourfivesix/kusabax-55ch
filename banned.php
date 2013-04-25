@@ -33,6 +33,11 @@ require KU_ROOTDIR . 'inc/classes/bans.class.php';
 
 $bans_class = new Bans();
 
+// Cloudflare support
+if(isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+  $_SERVER['REMOTE_ADDR']= $_SERVER["HTTP_CF_CONNECTING_IP"];
+}
+
 if (isset($_POST['appealmessage']) && KU_APPEAL != '') {
 	$results = $tc_db->GetAll("SELECT * FROM `".KU_DBPREFIX."banlist` WHERE `type` = '0' AND `ipmd5` = '" . md5($_SERVER['REMOTE_ADDR']) . "' AND `id` = " . $tc_db->qstr($_POST['banid']) . "LIMIT 1");
 	if (count($results)>0) {
